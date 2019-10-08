@@ -126,4 +126,4 @@ spec:
       source.namespace: "default"
   roleRef:
     kind: ServiceRole
-    name: "service-viewer"
+    name: "serviceViewer"
