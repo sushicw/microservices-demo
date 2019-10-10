@@ -17,7 +17,8 @@ kubectl apply -f ~/istio-release/istio-1.3.1/install/kubernetes/istio-demo-auth.
 kubectl label namespace default istio-injection-
 
 # Reset resources
-kubectl delete -f ~/go/src/github.com/GoogleCloudPlatform/microservices-demo/demo/canary1.yaml --ignore-not-found=true
+kubectl delete -f ~/go/src/github.com/GoogleCloudPlatform/microservices-demo/demo/canary1a.yaml --ignore-not-found=true
+kubectl delete -f ~/go/src/github.com/GoogleCloudPlatform/microservices-demo/demo/canary2.yaml --ignore-not-found=true
 kubectl apply -f ~/go/src/github.com/GoogleCloudPlatform/microservices-demo/demo/stage1.yaml
 
 # Reset pods
